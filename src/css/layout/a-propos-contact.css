@@ -1,0 +1,44 @@
+.fContact {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+div.contact {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset>legend {
+    font-size: var(--titre-article-page);
+    color: var(--rose-violet-texte);
+    margin-left: 39px;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: var(--rose-claire-fond);
+    border: solid 1px var(--rose-violet-texte);
+}
+
+.btn_input {
+    width: 123px;
+    height: 34px;
+    margin-left: 100px;
+    background-color: var(--rose-fonce-fond);
+    color: var(--noir-rose-texte-2);
+    border-radius: 50px;
+    font-size: 18px;
+}
+
