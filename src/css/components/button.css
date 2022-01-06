@@ -1,0 +1,7 @@
+/*chevrons up*/
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }

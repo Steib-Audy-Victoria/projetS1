@@ -1,0 +1,32 @@
+.footer__mid {
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: flex-start;
+}
+
+.footer__mid>.gauche {
+    flex: none;
+}
+
+.footer {
+    background-color: var(--rose-fonce-fond);
+    color: var(--noir-rose-texte-2);
+    padding: var(--space3x) var(--space2x);
+}
+
+.footer__nom {
+    color: var(--noir-rose-texte-2);
+}
+
+.footer__address {
+    font-style: normal;
+    color: var(--noir-rose-texte-2);
+    position: relative;
+    top: 30px; 
+}
+
+.footer__logo {
+    position: relative;
+    left: 80px;
+}
+
