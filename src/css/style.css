@@ -5,8 +5,10 @@
 @import url("/src/css/vendors/normalize.css");
 
 /*Utils*/
+@import url("/src/css/utils/variables.css");
 
 /*Base*/
+@import url("/src/css/base/main.css");
 
 /*Layout*/
 

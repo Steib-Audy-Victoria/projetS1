@@ -1,0 +1,85 @@
+/* Transforme le modèle de boite par défaut pour inclure dans la largeur et la hauteur, les marges intérieures et les bordures. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Les règles typographiques générales qui s'appliquent à tout le site */
+body {
+    font-family: var(--font-Mohave);
+    font-size: var(--corps-de-texte);
+    line-height: 1.6;
+    background-color: var(--rose-claire-fond);
+    color: var(--corps-de-texte-noir);
+}
+
+p, h2, h3, h4 {
+  padding: var(--space1x);
+}
+
+/* Les règles typographiques générales des titres */
+h1, h2 {
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--rose-violet-texte);
+}
+
+h1 {
+    font-size: var(--titre-du-site);
+}
+
+h2 {
+    font-size: var(--titre-article-page);
+}
+
+h3 {
+    font-weight: normal;
+    font-size: var(--intertitre);
+    color: var(--rose-violet-texte);    
+}
+
+/* Annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+/* Pour enlever l'apparence par défaut des listes */
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Classe générique permettant de définir les marges sur les cotés */
+.container {
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+  }
+
+/* Bug IOS
+=> L'overflow doit être appliqué sur l'élément body ET html
+pour faire disparaître le scroll sur safari IOS */
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
+/* Technique reprise de Bootsrap pour rendre le contenu 
+uniquement accessible aux lecteurs vocaux (sr = screen reader) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+

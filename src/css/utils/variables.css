@@ -1,0 +1,24 @@
+:root {
+    /* Color styles */
+    --rose-fonce-fond: rgba(224, 190, 251, 1);
+    --rose-claire-fond: rgba(238, 233, 243, 1);
+    --corps-de-texte-noir: rgba(0, 0, 0, 1);
+    --rose-violet-texte: rgba(136, 43, 141, 1);
+    --noir-rose-texte-2: rgba(62, 53, 69, 1);
+
+    /* Text-size styles */
+    --corps-de-texte: 16px;
+    --titre-du-site: 30px;
+    --titre-article-page: 25px;
+    --intertitre: 20px;
+
+    /* Font-family styles */
+    --font-Mohave: 'Mohave', sans-serif;
+
+    /* Espaces */
+    --space1x: 8px;
+    --space2x: 16px;
+    --space3x: 24px;
+    --space4x: 48px;
+    --letter-spacing: ;
+}
