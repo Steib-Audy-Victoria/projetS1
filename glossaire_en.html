@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The evolution of Feminism - Glossary</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <!-- Déclaration de la feuille de fonctions -->
+    <script src="src/fonctions.js"></script>
+
+</head>
+
+<body x-data="{ atTop : false }">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+        <div class="header__start">
+            <a class="header__logo" href="/">
+                <img src="public/img/Logo_du_site.svg" alt="Logo of the site, the evolution of feminism">
+                <h1 class="header__title">The evolution of Feminism </h1>
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!--Menu hamburger-->
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="article1_en.html">Feminism and Simone de Beauvoir</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article2_en.html">Feminism in today's society</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article3_en.html">Tomboy a gender film</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="frise_en.html">Feminism frieze</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="galerie_en.html">Gallery of feminist figures</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="glossaire_en.html">Glossary</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about-contact_en.html">About & Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="autres-projets_en.html">Others Projets</a>
+                    </li>
+                </ul>
+                <div class="menu__langue">
+                    <img class="menu__drap" src="public/icone/fr.svg" alt="French flag icon">
+                    <img class="menu__drap" src="public/icone/en.svg" alt="English flag icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Glossary</h2>
+
+        <p><a class="link__glos" href="https://www.larousse.fr">https://www.larouse.fr</a></p>
+
+        <dl>
+            <dt><b>Feminism :</b></dt>
+            <dd>masculine noun (latin femina, woman) <br>
+                1. A movement advocating the improvement and extension of the role and rights of women in society. <br>
+                2. The attitude of someone who aims to expand the role and rights of women: Active feminism.
+                Wikipedia: "Feminism is a collection of political, philosophical, and social movements and ideas, which
+                share a common goal: to define, establish, and achieve political, economic, cultural, personal, social,
+                and legal equality between women and men."
+
+            </dd>
+
+            <dt><b>Militant :</b></dt>
+            <dd>adjective (from militer)<br>
+                Who fights, fights for an idea, an opinion, a party <br>
+                Noun <br>
+                1. A member of a political, trade union or social organization who actively participates in the life of
+                this organization. <br>
+                2. Person who acts for a cause.
+            </dd>
+
+            <dt><b>Prejudice :</b></dt>
+            <dd>masculine noun (from préjuger) <br>
+                1. A judgment about someone, something, which is formed in advance according to certain personal
+                criteria and which guides one's attitude towards that person or thing for good or ill. <br>
+                2. Opinion adopted without examination, often imposed by the environment, education.
+            </dd>
+
+            <dt><b>Feminist :</b></dt>
+            <dd>adjective and noun <br>
+                Relating to feminism; supporter of feminism.
+            </dd>
+
+            <dt><b>Promote :</b></dt>
+            <dd>transitive verb (Latin promovere) <br>
+                To put something forward, to advocate something in an attempt to have it adopted, to encourage its
+                development.
+            </dd>
+
+            <dt><b>Existentialist :</b></dt>
+            <dd>adjective and noun <br>
+                Relating to existentialism; supporter of existentialism.
+            </dd>
+            <dt><b>Existentialism :</b></dt>
+            <dd>male noun (from existential) <br>
+                A philosophical doctrine that emphasizes human experience rather than being and that asserts the
+                identity of existence and essence, or their perfect complementarity.
+            </dd>
+
+            <dt><b>Goncourt Prize :</b></dt>
+            <dd>It is a French literary prize rewarding authors of French expression, created by the will of Edmond de
+                Goncourt in 1892</dd>
+
+            <dt><b>Pioneer :</b></dt>
+            <dd>noun <br>
+                A person who paves the way for something, who is the first to do something.
+            </dd>
+
+            <dt><b>Activist :</b></dt>
+            <dd>adjective and noun <br>
+                Related to activism; supporter of activism.
+            </dd>
+            <dt><b>Activism :</b></dt>
+            <dd>noun <br>
+                1. A system of conduct that emphasizes direct action (especially in the political or social sphere).
+                <br>
+                2. A moral attitude that insists on the necessities of life and action and on the necessary compromises
+                with principles that are too strict.
+            </dd>
+
+            <dt><b>FEMEN :</b></dt>
+            <dd>Group of Ukrainian origin that defends women's rights with the expression of nudity.</dd>
+
+            <dt><b>Feminicide :</b></dt>
+            <dd>Male noun <br>
+                Murder of a woman, a girl because of her sex.
+            </dd>
+
+            <dt><b>Feminicide collage :</b></dt>
+            <dd>A feminist collage is a militant means of expression that consists of pasting feminist messages on the
+                walls of public space.</dd>
+
+            <dt><b>Althusserian interpellation :</b></dt>
+            <dd>It is a form of identity assignment.</dd>
+        </dl>
+
+    </main>
+
+    <div class="btn">
+        <a href="#"><img src="Public/icone/chevrons-up.svg" alt="chevrons up icon to go to the top of the page"></a>
+    </div>
+    <footer class="footer">
+        <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
+        <div class="footer__mid">
+            <address class="footer__address gauche"><a
+                    href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
+            </address>
+            <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
+                    alt="Logo of the MMI department of Montbéliard"></a>
+        </div>
+        <p class="footer__ML">Project realized within the framework of an educational exercise in the MMi department of
+            Montbéliard
+        </p>
+
+    </footer>
+</body>
+
+</html>
