@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The evolution of Feminism - Feminism frieze</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <!-- Déclaration de la feuille de fonctions -->
+    <script src="src/fonctions.js"></script>
+
+</head>
+
+<body x-data="{ atTop : false }">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+        <div class="header__start">
+            <a class="header__logo" href="/">
+                <img src="public/img/Logo_du_site.svg" alt="Logo of the site, the evolution of feminism">
+                <h1 class="header__title">The evolution of Feminism </h1>
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!--Menu hamburger-->
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="article1_en.html">Feminism and Simone de Beauvoir</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article2_en.html">Feminism in today's society</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article3_en.html">Tomboy a gender film</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="frise_en.html">Feminism frieze</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="galerie_en.html">Gallery of feminist figures</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="glossaire_en.html">Glossary</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="a-propos-contact_en.html">About & Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="autres-projets_en.html">Others Projets</a>
+                    </li>
+                </ul>
+                <div class="menu__langue">
+                    <img class="menu__drap" src="public/icone/fr.svg" alt="French flag icon">
+                    <img class="menu__drap" src="public/icone/en.svg" alt="English flag icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Feminism frieze</h2>
+        <div class="frise">
+            <!--Flèche-->
+            <img class="frise__imgFleche" src="/Public/img/Flèche.svg" alt="Pink arrow down">
+
+            <!--liste-->
+            <ul class="frise__list list-unstyled">
+                <li class="list_item itm1">January 9, 1908 birth of Simone de Beauvoir</li>
+                <li class="list_item itm2">1943 novel "The Guest"</li>
+                <li class="list_item itm3">1944 Women's right to vote</li>
+                <li class="list_item itm4">1945 "Les Temps modernes" magazine</li>
+                <li class="list_item itm5">1949 essay "the second sex"</li>
+                <li class="list_item itm6">1954 Prize Goncourt</li>
+                <li class="list_item itm7">1965 married women can manage property and have a job and open a bank account
+                </li>
+                <li class="list_item itm8">1970 sexual emancipation movements and disappearance of the notion of head of
+                    the family</li>
+                <li class="list_item itm9">1975 divorce law</li>
+                <li class="list_item itm10">1979 law on voluntary interruption of pregnancy and penalization of rape
+                </li>
+                <li class="list_item itm11">April 14, 1986 death of Simone de Beauvoir</li>
+                <li class="list_item itm12">24 November 1990 birth of Marguerite Stern</li>
+                <li class="list_item itm13">2011 Release of the movie Tomboy</li>
+                <li class="list_item itm14">October 2012 first FEMEN action</li>
+                <li class="list_item itm15">November 18, 2012 punching action against Civitas</li>
+                <li class="list_item itm16">2013 debate on gender studies in France</li>
+                <li class="list_item itm17">January 19, 2018 end of trial against the violent men of the demonstration
+                    against Civitas</li>
+                <li class="list_item itm18">March 2019 first collage against feminicide</li>
+                <li class="list_item itm19">August 25, 2019 first collage in Paris</li>
+                <li class="list_item itm20">August 30, 2019 first collective collage</li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="btn">
+        <a href="#"><img src="Public/icone/chevrons-up.svg" alt="chevrons up icon to go to the top of the page"></a>
+    </div>
+    <footer class="footer">
+        <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
+        <div class="footer__mid">
+            <address class="footer__address gauche"><a
+                    href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
+            </address>
+            <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
+                    alt="Logo of the MMI department of Montbéliard"></a>
+        </div>
+        <p class="footer__ML">Project realized within the framework of an educational exercise in the MMi department of
+            Montbéliard
+        </p>
+
+    </footer>
+</body>
+
+</html>
