@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The evolution of Feminism - Tomboy a gender film</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <!-- Déclaration de la feuille de fonctions -->
+    <script src="src/fonctions.js"></script>
+
+</head>
+
+<body x-data="{ atTop : false }">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+        <div class="header__start">
+            <a class="header__logo" href="/">
+                <img src="public/img/Logo_du_site.svg" alt="Logo of the site, the evolution of feminism">
+                <h1 class="header__title">The evolution of Feminism </h1>
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!--Menu hamburger-->
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="article1_en.html">Feminism and Simone de Beauvoir</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article2_en.html">Feminism in today's society</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article3_en.html">Tomboy a gender film</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="frise_en.html">Feminism frieze</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="galerie_en.html">Gallery of feminist figures</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="glossaire_en.html">Glossary</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="a-propos-contact_en.html">About & Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="autres-projets_en.html">Others Projets</a>
+                    </li>
+                </ul>
+                <div class="menu__langue">
+                    <img class="menu__drap" src="public/icone/fr.svg" alt="French flag icon">
+                    <img class="menu__drap" src="public/icone/en.svg" alt="English flag icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Tomboy a gender film</h2>
+
+        <!--introduction of the article-->
+        <p>Tomboy is a film by Céline Sciamma, from 2011.</p>
+        <!--link to the trailer of the movie Tomboy on Youtube-->
+        <iframe class="bandeAnnonce" width="950" height="534" src="https://www.youtube.com/embed/1PFeZSxdQyY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <!--Part 1 of the article-->
+        <h3>Presentation of the film</h3>
+        <p>Laure is a 10 year old girl, who looks like a tomboy, moves to a new town, during the summer vacations, with
+            her parents and her sister. Where she feels excluded.</p>
+        <p>Soon after she meets Lisa who thinks she is a boy, deceived by the way she dresses, her short hair and her
+            boyish looks. And who asks her "are you new?", and Laure answered "yes" after a few seconds of hesitation,
+            Lisa continued by asking her "what's your name?" and Laure answered "Michael". This scene enters within the
+            framework of the <b>Althusserian interpellation</b>, because the request for a first name enters the ritual
+            of recognition between the children.</p>
+        <p>Lisa then introduces " Mickaël " to her friends and " he " quickly becomes part of the group. Having little
+            breasts, she can play soccer and swim topless, and to make things even more real she even cuts off the top
+            of her bathing suit to keep only a pair of panties and even puts a piece of modeling clay in it to make it
+            look like she has a penis.</p>
+        <img class="imgGT" src="public/img/Tomboy_1.webp" alt="Image of Laure, from the movie Tomboy">
+        <p>But one day while playing soccer, she feels a strong urge to urinate and quickly goes to relieve herself in
+            the bushes, but she is caught squatting by one of the boys, so she quickly gets up and urinates on his
+            shorts.</p>
+        <p>The boy who surprises her tells the others how "he" (Laure) has "pissed himself". Laure feels humiliated, but
+            she is not discovered, and the matter seems quickly forgotten.</p>
+        <p>But the situation starts to get complicated when Lisa, who seems to fall in love, kisses her. And even more
+            when, a little later, Lisa is surprised that "Mickaël" is not on the list of students for the next school
+            year.</p>
+        <p>However, the deception is discovered after Laure has fought with one of the boys to protect her little
+            sister, and the mother of the latter comes to complain to Laure's mother, who quickly understands what has
+            happened, by the fact that she talks about Laure as if it were her son, but does not contradict her.</p>
+        <p>But then she forces Laure to put on a dress and takes her to the group of friends to confess her secret, who
+            are shocked by this news.
+            A few days later, they push Lisa to check Laure's sex by removing her pants, and Laure more than humiliated
+            locks herself at home.</p>
+        <p>But she decides to go out again when she sees Lisa, alone at the place where they met the first time,
+            and when the latter asks her again how she is called, she reveals her birth name.</p>
+
+        <!--Part 2 of the article-->
+        <h3>What does this film provoke ?</h3>
+        <p>This film re-launched the debate on the study of gender in France in 2013, and it was included in the "School
+            and Cinema" scheme supported by the Ministry of National Education and the Ministry of Culture.</p>
+        <p>And in a context of demonstrations against gay marriage, a petition entitled "No to the broadcasting of the
+            film Tomboy in schools!" was launched, but the satisfaction rate of teachers who had seen the film was very
+            high, 79% of them judging the film very interesting", and the teaching therefore judged in its report that
+            it is necessary "to trust the analytical capacity of students and not to project adult fears on what
+            children might think".</p>
+
+    </main>
+
+    <div class="btn">
+        <a href="#"><img src="Public/icone/chevrons-up.svg" alt="chevrons up icon to go to the top of the page"></a>
+    </div>
+    <footer class="footer">
+        <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
+        <div class="footer__mid">
+            <address class="footer__address gauche"><a
+                    href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
+            </address>
+            <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
+                    alt="Logo of the MMI department of Montbéliard"></a>
+        </div>
+        <p class="footer__ML">Project realized within the framework of an educational exercise in the MMi department of
+            Montbéliard
+        </p>
+
+    </footer>
+</body>
+
+</html>
