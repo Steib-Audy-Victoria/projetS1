@@ -1,0 +1,11 @@
+dd {
+    margin-bottom: 35px;
+}
+
+dt {
+    padding-left: 10px;
+}
+
+.link__glos {
+    color: var(--corps-de-texte-noir);
+}
