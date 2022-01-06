@@ -39,6 +39,11 @@ h3 {
     color: var(--rose-violet-texte);    
 }
 
+h4 {
+  color: var(--rose-violet-texte);
+  font-weight: normal;
+}
+
 /* Annuler la mise en forme des bouton qu'applique le navigateur. */
 button {
     -webkit-appearance: none;

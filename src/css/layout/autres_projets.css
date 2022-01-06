@@ -1,4 +1,9 @@
-.proj__title {
-    color: var(--rose-violet-texte);
-    font-weight: normal;
+.proj__item>h4 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.proj__item>p {
+    margin-top: 0px;
+    padding-top: 0px;
 }
