@@ -1,0 +1,175 @@
+.frise {
+    display: flex;
+    align-items: normal;
+}
+
+.list_item {
+    border-style: none none solid;
+    border-color: var(--corps-de-texte-noir);
+    z-index: -10;
+}
+
+.frise__imgFleche {
+    z-index: -15;
+}
+
+.itm1, .itm2, .itm4, .itm5, .itm6, .itm11, .itm12, .itm13, 
+.itm14, .itm15, .itm16, .itm17, .itm18, .itm19, .itm20 {
+    border-color: var(--rose-violet-texte);
+}
+
+.itm1 {
+    position: absolute;
+    width: 298.39px;
+    height: 42.04px;
+    left: 61px;
+    top: 248px;
+}
+
+.itm2{
+    position: absolute;
+    width: 298.39px;
+    height: 23.08px;
+    left: 61px;
+    top: 335px;
+}
+
+.itm3 {
+    position: absolute;
+    width: 298.39px;
+    height: 22.11px;
+    left: 61px;
+    top: 387px;
+}
+
+.itm4 {
+    position: absolute;
+    width: 298.39px;
+    height: 24.13px;
+    left: 61px;
+    top: 438px;
+}
+.itm5 {
+    position: absolute;
+    width: 298.39px;
+    height: 19.02px;
+    left: 51px;
+    top: 507px;
+}
+.itm6 {
+    position: absolute;
+    width: 298.39px;
+    height: 22.21px;
+    left: 61px;
+    top: 571px;
+}
+.itm7 {
+    position: absolute;
+    width: 298.39px;
+    height: 65.29px;
+    left: 61px;
+    top: 638px;
+
+}
+.itm8 {
+    position: absolute;
+    width: 298.39px;
+    height: 67.37px;
+    left: 61px;
+    top: 748px;
+}
+.itm9 {
+    position: absolute;
+    width: 298.39px;
+    height: 21.41px;
+    left: 61px;
+    top: 860px;
+}
+.itm10 {
+    position: absolute;
+    width: 300.39px;
+    height: 42.46px;
+    left: 61px;
+    top: 926px;
+}
+
+.itm11 {
+    position: absolute;
+    width: 298.39px;
+    height: 44.02px;
+    left: 61px;
+    top: 1013px;
+}
+
+.itm12 {
+    position: absolute;
+    width: 298.39px;
+    height: 43.04px;
+    left: 61px;
+    top: 1102px;
+}
+
+.itm13 {
+    position: absolute;
+    width: 298.39px;
+    height: 20.02px;
+    left: 61px;
+    top: 1190px;
+}
+
+.itm14 {
+    position: absolute;
+    width: 298.39px;
+    height: 45.04px;
+    left: 61px;
+    top: 1239px;
+}
+
+.itm15 {
+    position: absolute;
+    width: 250px;
+    height: 43px;
+    left: 110px;
+    top: 1293.04px;
+}
+
+.itm16 {
+    position: absolute;
+    width: 298.61px;
+    height: 41.02px;
+    left: 61.39px;
+    top: 1365px;
+}
+
+.itm17 {
+    position: absolute;
+    width: 298.39px;
+    height: 65.06px;
+    left: 61px;
+    top: 1451.02px;
+}
+
+.itm18 {
+    position: absolute;
+    width: 298.39px;
+    height: 43.04px;
+    left: 60.61px;
+    top: 1544.78px;
+
+}
+
+.itm19 {
+    position: absolute;
+    width: 249.37px;
+    height: 20.02px;
+    left: 109.63px;
+    top: 1595.83px;
+}
+
+.itm20 {
+    position: absolute;
+    width: 249.37px;
+    height: 43.04px;
+    left: 109.63px;
+    top: 1622.86px;
+}
