@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The evolution of Feminism - Feminism in today's society</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <!-- Déclaration de la feuille de fonctions -->
+    <script src="src/fonctions.js"></script>
+
+</head>
+
+<body x-data="{ atTop : false }">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+        <div class="header__start">
+            <a class="header__logo" href="/">
+                <img src="public/img/Logo_du_site.svg" alt="Logo of the site, the evolution of feminism">
+                <h1 class="header__title">The evolution of Feminism </h1>
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!--Menu hamburger-->
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="article1_en.html">Feminism and Simone de Beauvoir</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article2_en.html">Feminism in today's society</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article3_en.html">Tomboy a gender film</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="frise_en.html">Feminism frieze</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="galerie_en.html">Gallery of feminist figures</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="glossaire_en.html">Glossary</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="a-propos-contact_en.html">About & Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="autres-projets_en.html">Others Projets</a>
+                    </li>
+                </ul>
+                <div class="menu__langue">
+                    <img class="menu__drap" src="public/icone/fr.svg" alt="French flag icon">
+                    <img class="menu__drap" src="public/icone/en.svg" alt="English flag icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Feminism in today's society</h2>
+
+        <!--introduction of the article-->
+        <p>I have chosen Marguerite Stern as a <b>feminist</b> of today because I think that she does
+            <b>feminist</b> dactions in the continuity of Simone de Beauvoir's.
+        </p>
+        <p>Marguerite Stern was born on November 24, 1990. The year of her 18th birthday, which she spent in Paris, was
+            very complicated because of the harassment she suffered from men in the street, and it is very angry that
+            she became a French <b>feminist activist</b></p>
+        <img class="imgGT" src="public/img/Marguerite_Stern1.webp" alt="Image of Marguerite Stern">
+
+        <!--Part 1 of the article-->
+        <h3>What are these actions ?</h3>
+        <p>Former <b>FEMEN</b>, in which she pledges to do as much <b>feminist</b> action as possible.</p>
+        <p>The first in October 2012, targets ikea with their decision to erase women from their Saudi catalog, in
+            accordance with national laws.</p>
+        <p>But it is November 18, 2012, which is a marker of its commitment to the <b>FEMEN</b>, awith a coup-de-poing
+            action against Civitas at the time of the demonstrations of the demonstration for all. They went dressed as
+            nuns with fire extinguishers, on which was written "Jesus Sperm" or "Holly Sperm", where they sprayed the
+            demonstrators who were singing "Nazi songs" with flags on which there were "fascist symbols."</p>
+        <p>It was at this point that they were assaulted, two of them filed complaints for "voluntary violence" and on
+            January 19, 2018 seven of the eight men tried for violence were sentenced to sentences of up to one year in
+            prison suspended. It was this action that began to make her known.</p>
+
+        <!--Part 2 of the article-->
+        <h3>The stocks on which it is best known</h3>
+        <p>Marguerite Stern is best known for creating the future mode of action of the <b>collages</b> against
+            <b>feminicides</b>, of which she was the originator, an international <b>feminist</b> movement aiming to
+            make visible and denounce the murders of women by their spouses or ex-spouses.
+        </p>
+        <p>Her <b>collages</b> are composed of black letters painted one by one on white sheets, and she sticks them in
+            the streets of Marseille. Her first collaged slogan is "Since I was 13, men comment on my physical
+            appearance in the street".</p>
+        <p>In March 2019, she creates the first <b>collage</b> denouncing a <b>feminicide</b>, that of Julie Douib.</p>
+        <p>She makes <b>collages</b> for the first time in Paris on August 25, 2019 and on August 30, 2019 she initiates
+            the first collective <b>collage</b> against <b>feminicides</b>.</p>
+        <p>The simplicity of the mode of action and the increase in the number of <b>feminicides</b> in France
+            <b>collages</b> groups are formed in many cities, but also internationally, and the media is also interested
+            in this phenomenon.
+        </p>
+        <img class="imgGT" src="public/img/Marguerite_Stern2.webp"
+            alt="Image of Marguerite Stern during a collage event">
+
+        <!--Part 3 of the article-->
+        <h3>What is the main purpose of these collages ?</h3>
+        <p>These <b>collages</b> display slogans that aim to raise awareness and denounce the inaction of public
+            authorities to act effectively against violence against women; and also allow to pay tribute to the victims.
+        </p>
+        <p>By posting short sentences that describe the circumstances of the murders or that carry a general aim, put in
+            places considered "symbolic" as governmental institutions, or very frequented as museums.</p>
+        <p>These <b>collages</b> are symbolic for the majority of women in today's society and help many to talk about
+            the domestic violence they suffer.</p>
+
+    </main>
+
+    <div class="btn">
+        <a href="#"><img src="Public/icone/chevrons-up.svg" alt="chevrons up icon to go to the top of the page"></a>
+    </div>
+    <footer class="footer">
+        <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
+        <div class="footer__mid">
+            <address class="footer__address gauche"><a
+                    href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
+            </address>
+            <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
+                    alt="Logo of the MMI department of Montbéliard"></a>
+        </div>
+        <p class="footer__ML">Project realized within the framework of an educational exercise in the MMi department of
+            Montbéliard
+        </p>
+
+    </footer>
+</body>
+
+</html>
