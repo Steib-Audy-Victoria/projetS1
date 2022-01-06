@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>L'évolution du Féminisme - Page d'accueil</title>
+    <title>The evolution of Feminism - Home page</title>
 
     <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="src/css/style.css">
@@ -28,8 +28,8 @@
 
         <div class="header__start">
             <a class="header__logo" href="/">
-                <img src="public/img/Logo_du_site.svg" alt="Logo du site, l'évolution du Féminisme">
-                <h1 class="header__title">L'évolution du Féminisme</h1>
+                <img src="public/img/Logo_du_site.svg" alt="Logo of the site, the evolution of feminism">
+                <h1 class="header__title">The evolution of Feminism </h1>
             </a>
         </div>
 
@@ -43,54 +43,56 @@
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item">
-                        <a class="menu__link" href="article1_fr.html">Le féminisme et Simone de Beauvoir</a>
+                        <a class="menu__link" href="article1_en.html">Feminism and Simone de Beauvoir</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="article2_fr.html">Le féminisme dans la société actuelle</a>
+                        <a class="menu__link" href="article2_en.html">Feminism in today's society</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="article3_fr.html">Tomboy, un film de genre</a>
+                        <a class="menu__link" href="article3_en.html">Tomboy a gender film</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="frise_fr.html">Frise du féminisme</a>
+                        <a class="menu__link" href="frise_en.html">Feminism frieze</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="galerie_fr.html">Galerie des figures du féminisme</a>
+                        <a class="menu__link" href="galerie_en.html">Gallery of feminist figures</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="glossaire_fr.html">Glossaire</a>
+                        <a class="menu__link" href="glossaire_en.html">Glossary</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="a-propos-contact_fr.html">À propos & contact</a>
+                        <a class="menu__link" href="a-propos-contact_en.html">About & Contact</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="autres-projets_fr.html">Autres Projets</a>
+                        <a class="menu__link" href="autres-projets_en.html">Others Projets</a>
                     </li>
                 </ul>
                 <div class="menu__langue">
-                    <img class="menu__drap" src="public/icone/fr.svg" alt="icone drapeau français">
-                    <img class="menu__drap" src="public/icone/en.svg" alt="icone drapeau anglais">
+                    <img class="menu__drap" src="public/icone/fr.svg" alt="French flag icon">
+                    <img class="menu__drap" src="public/icone/en.svg" alt="English flag icon">
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <!--section introduction de la page d'accueil-->
+        <!--introduction section of the home page-->
         <div>
 
-            <p>Le mot « <b>féminisme</b> » est entré dans la langue française à partir 1837.</p>
-            <p>Ce qui caractérise le mouvement du <b>féminisme</b> c’est sa discontinuité, c’est pour cela qu’on parle
-                de « vague » <b>féminisme</b>. Et ces « vagues » évoluent au cours du temps et des époques.</p>
+            <p>The word « <b>feminism</b> » entered the French language in 1837.</p>
+            <p>And what characterizes the movement of feminism is its discontinuity, that's why we speak about
+                <b>feminist</b> "wave". And these "waves" evolve over time and eras.
+            </p>
 
             <div class="carrousel-grid carrousel">
                 <!--Carrousel d'image-->
                 <div class="carrrousel images13">
-                    <img id="img1" class="image13 imgGT" src="public/img/Tomboy_1.webp" alt="Image du film Tomboy">
+                    <img id="img1" class="image13 imgGT" src="public/img/Tomboy_1.webp"
+                        alt="Image from the movie Tomboy">
                     <img id="img2" class="image13 imgGT" src="public/img/Marguerite_Stern1.webp"
-                        alt="Image de Marguerite Stern">
+                        alt="Image of Marguerite Stern">
                     <img id="img3" class="image13 imgGT" src="public/img//Simone_de_Beauvoir1.webp"
-                        alt="Image de Simone de Beauvoir">
+                        alt="Image of Simone de Beauvoir">
                 </div>
                 <script>carrousel()</script>
             </div>
@@ -99,60 +101,59 @@
 
         <!--Carte de pour l'article 1-->
         <article class="card">
-            <h2 class="card__title">Le féminisme et Simone de Beauvoir</h2>
+            <h2 class="card__title">Feminism and Simone de Beauvoir</h2>
             <div class="card__mid">
                 <div class="gauche"><img class="card__img" src="public/img/Card_Simone_de_Beauvoir.webp"
-                        alt="Portrait de Simone de Beauvoir"></div>
+                        alt="Portrait of Simone de Beauvoir"></div>
                 <div class="droite">
-                    <p class="card__texte">Pour parler du <b>féminisme</b> il faut connaître sa définition. Présentation
-                        de Simone de Beauvoir, une <b>féminisme</b> qui était en avance sur son temps.</p>
+                    <p class="card__texte">To talk about <b>feminism</b> you have to know its definition. Presentation
+                        of Simone de Beauvoir, a <b>feminism</b> who was ahead of her time.</p>
                 </div>
             </div>
-            <a class="card__link" href="article1_fr.html">Lire l'article</a>
+            <a class="card__link" href="article1_fr.html">Read the article</a>
         </article>
 
         <!--Carte de pour l'article 2-->
         <article class="card">
-            <h2 class="card__title">Le féminisme dans la société actuelle</h2>
+            <h2 class="card__title">Feminism in today's society</h2>
             <div class="card__mid">
                 <div class="gauche">
                     <img class="card__img" src="public/img/Card_Marguerite_Stern.webp"
-                        alt="Portrait de Marguerite Stern">
+                        alt="Portrait of Marguerite Stern">
                 </div>
                 <div class="droite">
-                    <p class="card__texte">Pour continuer dans le <b>féminisme</b> de notre société actuelle, la
-                        présentation de Marguerite Stern avec ces actions et ces <b>collages</b>.</p>
+                    <p class="card__texte">To continue in the <b>feminism</b> of our current society, the presentation
+                        of Marguerite Stern with these actions and these <b>collages</b>.</p>
                 </div>
             </div>
-            <a class="card__link" href="article2_fr.html">Lire l'article</a>
+            <a class="card__link" href="article2_fr.html">Read the article</a>
         </article>
 
         <!--Carte de pour l'article 3-->
         <article class="card">
-            <h2 class="card__title">Tomboy, un film de genre</h2>
+            <h2 class="card__title">Tomboy a gender film</h2>
             <div class="card__mid">
                 <div class="gauche">
                     <img class="card__img" src="public/img/Card_Tomboy.webp" alt="Image de la jaquette du film Tomboy">
                 </div>
                 <div class="droite">
-                    <p class="card__texte">Présentation du film Tomboy, qui pose des questions sur le genre et provoque
-                        des débats.</p>
+                    <p class="card__texte">Presentation of the film Tomboy, which raises questions about gender and
+                        provokes debate.</p>
                 </div>
             </div>
-            <a class="card__link" href="article3_fr.html">Lire l'article</a>
+            <a class="card__link" href="article3_fr.html">Read the article</a>
         </article>
 
         <!--section vidéo-->
         <section>
-            <h2>Vidéo</h2>
-            <video class="videoMT" src="public/video/micro_trottoire">vidéo d'un micro-trottoirs</video>
+            <h2>Video</h2>
+            <video class="videoMT" src="public/video/micro_trottoire">video of a micro-trottoirs </video>
         </section>
 
     </main>
 
     <div class="btn">
-        <a href="#"><img src="Public/icone/chevrons-up.svg"
-                alt="icone chevrons up qui permet de remonter en haut de la page"></a>
+        <a href="#"><img src="Public/icone/chevrons-up.svg" alt="chevrons up icon to go to the top of the page"></a>
     </div>
     <footer class="footer">
         <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
@@ -161,9 +162,10 @@
                     href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
             </address>
             <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
-                    alt="Logo du département MMI de Montbéliard"></a>
+                    alt="Logo of the MMI department of Montbéliard"></a>
         </div>
-        <p class="footer__ML">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+        <p class="footer__ML">Project realized within the framework of an educational exercise in the MMi department of
+            Montbéliard
         </p>
 
     </footer>
