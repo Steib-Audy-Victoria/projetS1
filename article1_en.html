@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The evolution of Feminism - Feminism and Simone de Beauvoir</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <!-- Déclaration de la feuille de fonctions -->
+    <script src="src/fonctions.js"></script>
+
+</head>
+
+<body x-data="{ atTop : false }">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+        <div class="header__start">
+            <a class="header__logo" href="/">
+                <img src="public/img/Logo_du_site.svg" alt="Logo of the site, the evolution of feminism">
+                <h1 class="header__title">The evolution of Feminism </h1>
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!--Menu hamburger-->
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="article1_en.html">Feminism and Simone de Beauvoir</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article2_en.html">Feminism in today's society</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article3_en.html">Tomboy a gender film</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="frise_en.html">Feminism frieze</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="galerie_en.html">Gallery of feminist figures</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="glossaire_en.html">Glossary</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="a-propos-contact_en.html">About & Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="autres-projets_en.html">Others Projets</a>
+                    </li>
+                </ul>
+                <div class="menu__langue">
+                    <img class="menu__drap" src="public/icone/fr.svg" alt="French flag icon">
+                    <img class="menu__drap" src="public/icone/en.svg" alt="English flag icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Feminism and Simone de Beauvoir</h2>
+
+        <!--introduction of the article-->
+
+        <p>To be able to speak about <b>feminism</b> we must already ask ourselves the question of its definition. But
+            there are several definitions of <b>feminism</b> :</p>
+        <ul>
+            <li>« A <b>militant</b> movement for the improvement and extension of the role and rights of women in
+                society." Larousse Dictionary</li>
+            <li>« <b>feminism</b> is a set of political, philosophical and social movements and ideas, which share a
+                common goal: to define, establish and achieve political, economic, cultural, personal, social and legal
+                equality between women and men." Wikipedia</li>
+        </ul>
+        <p>So we can say that the definition of <b>feminism</b> s something quite personal to each person, however they
+            often come together on certain points: women have and should have the same rights as men (equality man and
+            woman), the gender of a person can not justify a difference in treatment, to break down <b>prejudice</b>
+            against women.</p>
+        <p>So everyone can be a <b>feminist</b>, even a man, because <b>feminism</b> es a set of movements and
+            philosophical ideas that aim to define and <b>promote</b> equality (at different levels: political,
+            economic, cultural, social and legal) between women and men by fighting for women's rights in society and in
+            private life.</p>
+
+        <!--Part 1 of the article-->
+        <h3>Example of a feminist woman :</h3>
+        <img class="imgGT" src="public/img/Simone_de_Beauvoir1.webp" alt="Image of Simone de Beauvoir">
+        <p>Simone de Beauvoir was born on January 9, 1908 in Paris and died on April 14, 1986 in Paris. She is a
+            philosopher and writer.</p>
+        <p>She began to be known in 1949, by her <b>feminism</b> and <b>existentialist</b> essay "the second sex", where
+            she advocates equality in the difference.</p>
+        <p>Then she published the novel "The Mandarins" and won the <b>Goncourt Prize</b> in 1954.</p>
+        <p>From 1958 she published autobiographical stories such as "Memoirs of a young girl row" which speaks of his
+            environment full of prejudice.</p>
+        <p>She also participated in the creation of the <b>existentialist</b> «magazine "Les Temps Modernes" in 1945,
+            and also played an important role in the recognition of the torture inflicted on women during the Algerian
+            War and for the right to abortion, in the struggles of Gisèle Halimi and Elisabeth Badinter.</p>
+        <p>She is considered as a <b>pioneer</b> dof women's liberation by the
+            <b>feminist</b> movements, she has demonstrated all her life that one can be a woman while being independent
+            and free.
+        </p>
+
+        <!--Part 2 of the article-->
+        <img class="imgGT" src="public/img/Simone_de_Beauvoir2.webp"
+            alt="Image of Simone de Beauvoir with the book les mandarins which made her win the Goncourt prize">
+        <h3>On what subjects was she known ?</h3>
+        <p>And she was especially known on three topics: </p>
+        <p>The first is the mental load and domestic work, where she already explained how women were suffering a double
+            day, because household chores is an additional unpaid workload, and already fought for a fairer distribution
+            of tasks.
+        </p>
+        <p>The second is the female body, of which she explained the menstruation, the vagina or the clitoris. And in
+            the second sex she talked about the physiological functioning of the female organs, which at the time
+            shocked a lot and was criticized, because she talked about a subject that was still taboo at the time, the
+            sexuality of women and female pleasure.</p>
+        <p>And the last one is sexual freedom, where in her novel The Guest of 1943 she was inspired by her own love
+            trio, with Jean-Paul Sartre, with whom she remained a free couple all her life, and Olga Kosakiewicz, one of
+            her former students. She did not hide sleeping with other people, man or woman. And she did not want to
+            marry or have children, she preferred to be free and live her life as she wanted.</p>
+
+
+    </main>
+
+    <div class="btn">
+        <a href="#"><img src="Public/icone/chevrons-up.svg" alt="chevrons up icon to go to the top of the page"></a>
+    </div>
+    <footer class="footer">
+        <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
+        <div class="footer__mid">
+            <address class="footer__address gauche"><a
+                    href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
+            </address>
+            <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
+                    alt="Logo of the MMI department of Montbéliard"></a>
+        </div>
+        <p class="footer__ML">Project realized within the framework of an educational exercise in the MMi department of
+            Montbéliard
+        </p>
+
+    </footer>
+</body>
+
+</html>
