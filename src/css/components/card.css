@@ -1,0 +1,29 @@
+.card {
+    border: solid;
+    border-color: var(--rose-violet-texte);
+    border-width: 2px;
+    margin: 5px;
+    margin-top: 25px;
+}
+
+.card__mid {
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: flex-start;
+}
+
+.card__mid>.gauche {
+    flex: none;
+}
+
+.card__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: solid;
+    border-color: var(--rose-violet-texte);
+    border-width: 2px;
+    margin-left: 120px;
+    margin-right: 120px;
+}

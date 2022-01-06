@@ -9,6 +9,7 @@
 
 /*Base*/
 @import url("/src/css/base/main.css");
+@import url("/src/css/base/media.css");
 
 /*Layout*/
 @import url("/src/css/layout/header.css");
@@ -17,3 +18,4 @@
 /*Components*/
 @import url("/src/css/components/menu.css");
 @import url("/src/css/components/button.css");
+@import url("/src/css/components/card.css");
