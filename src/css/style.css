@@ -16,8 +16,7 @@
 @import url("/src/css/layout/footer.css");
 @import url("/src/css/layout/frise.css");
 @import url("/src/css/layout/a-propos-contact.css");
-
-
+@import url("/src/css/layout/autres_projets.css");
 
 /*Components*/
 @import url("/src/css/components/menu.css");
