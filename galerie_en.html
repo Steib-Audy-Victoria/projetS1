@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The evolution of Feminism - Gallery of feminist figures</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <!-- Déclaration de la feuille de fonctions -->
+    <script src="src/fonctions.js"></script>
+
+</head>
+
+<body x-data="{ atTop : false }">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+        <div class="header__start">
+            <a class="header__logo" href="/">
+                <img src="public/img/Logo_du_site.svg" alt="Logo of the site, the evolution of feminism">
+                <h1 class="header__title">The evolution of Feminism </h1>
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!--Menu hamburger-->
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="article1_en.html">Feminism and Simone de Beauvoir</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article2_en.html">Feminism in today's society</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article3_en.html">Tomboy a gender film</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="frise_en.html">Feminism frieze</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="galerie_en.html">Gallery of feminist figures</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="glossaire_en.html">Glossary</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="a-propos-contact_en.html">About & Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="autres-projets_en.html">Others Projets</a>
+                    </li>
+                </ul>
+                <div class="menu__langue">
+                    <img class="menu__drap" src="public/icone/fr.svg" alt="French flag icon">
+                    <img class="menu__drap" src="public/icone/en.svg" alt="English flag icon">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Gallery of feminist figures</h2>
+
+        <!--Olympe de Gouges-->
+        <img class="imgGT" src="public/img//Olympe_de_Gouges.webp" alt="Image of Olympe de Gouges">
+        <p>Olympe de Gouges: She was born on May 7, 1748 in Montauban and died on November 3, 1793 in Paris. She was a
+            French woman of letters, and became a politician. She is the author of the Declaration of the Rights of
+            Women and Citizens. She also left many writings in favor of the civil and political rights of women and the
+            abolition of black slavery.</p>
+
+        <!--Rosa Parks-->
+        <img class="imgGT" src="public/img/Rosa_Parks.webp" alt="Image of Rosa Parks">
+        <p>Rosa Parks: She was born on February 4, 1913 and died on October 24, 2005. She was an African-American woman
+            who became an iconic figure in the fight against racial segregation in the United States. She also fought
+            against racial segregation with Martin Luther King.</p>
+
+        <!--Simone Veil-->
+        <img class="imgGT" src="public/img/Simone_Veil.webp" alt="Image of Simone Veil">
+        <p>Simone Veil: She was born on July 13, 1927 in Nice and died on June 30, 2017 in Paris. She was a French
+            stateswoman. But during the war, being born to a Jewish family, she was deported to Auschwitz at the age of
+            16, where she lost her parents and brother. In 1974, she was appointed Minister of Health by President
+            Valéry Giscard d'Estaing, who entrusted her with the adoption of the law decriminalizing the recourse by a
+            woman to the voluntary interruption of pregnancy. In 2008 she was elected to the French Academy.</p>
+
+        <!--Emma Watson-->
+        <img class="imgGT" src="public/img/Emma_Watson.webp" alt="Image of Emma Watson">
+        <p>Emma Watson : Born on April 15, 1990 in Paris. She is a British actress, famous for playing the role of
+            Hermione Granger in the Harry Potter saga. She is a Goodwill Ambassador by the UN Women in July 2014. She
+            acts in favor of fair trade and sustainable development. She adopts feminist speeches.
+        </p>
+
+        <!--Gisèle Halimi-->
+        <img class="imgGT" src="/Public/img/Gisele_Halimi.webp" alt="Image of Gisèle Halimi">
+        <p>Gisèle Halimi: Born on July 27, 1927 in La Goulette, Tunisia and died on July 28, 2020 in Paris. She was a
+            lawyer, feminist activist and Franco-Tunisian politician. She is the only lawyer signatory of the manifesto
+            of the 343 of 1971.</p>
+
+        <!--Greta Thunberg-->
+        <img class="imgGT" src="/Public/img/Greta_Thunberg.webp" alt="Image of Greta Thunberg ">
+        <p>Greta Thunberg: She was born on January 3, 2003 in Stockholm, Sweden. She is a Swedish environmental activist
+            committed to the fight against global warming. She made a speech at the United Nations headquarters,
+            confronting them with the existential crisis of climate change. In 2018, she protested in front of the
+            Swedish Parliament against inaction on climate change, and she is launching the school climate strike.</p>
+    </main>
+
+    <div class="btn">
+        <a href="#"><img src="Public/icone/chevrons-up.svg" alt="chevrons up icon to go to the top of the page"></a>
+    </div>
+    <footer class="footer">
+        <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
+        <div class="footer__mid">
+            <address class="footer__address gauche"><a
+                    href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
+            </address>
+            <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
+                    alt="Logo of the MMI department of Montbéliard"></a>
+        </div>
+        <p class="footer__ML">Project realized within the framework of an educational exercise in the MMi department of
+            Montbéliard
+        </p>
+
+    </footer>
+</body>
+
+</html>
