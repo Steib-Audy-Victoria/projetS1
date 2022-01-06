@@ -1,0 +1,37 @@
+.header {
+    background-color: var(--rose-fonce-fond);
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 var(--space3x);
+    z-index: 10;
+}
+
+.header__logo {
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.header__title {
+    color: var(--rose-violet-texte);
+}
+
+.header__end {
+    display: flex;
+    gap: var(--space2x);
+}
+
+.header__start {
+    display: flex;
+}
+
+.header--atTop {
+    background-color: var(--rose-fonce-fond);
+  }
+  
+.header--atTop {
+filter: none;
+}
