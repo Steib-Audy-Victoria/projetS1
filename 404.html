@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>404 - Page Non trouvée</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+
+    <!-- Déclaration de la feuille de fonctions -->
+    <script src="src/fonctions.js"></script>
+</head>
+
+<body x-data="{ atTop : false }">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+        <div class="header__start">
+            <a class="header__logo" href="/">
+                <img src="public/img/Logo_du_site.svg" alt="Logo du site, l'évolution du Féminisme">
+                <h1 class="header__title">L'évolution du Féminisme</h1>
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!--Menu hamburger-->
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="article1_fr.html">Le féminisme et Simone de Beauvoir</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article2_fr.html">Le féminisme dans la société actuelle</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="article3_fr.html">Tomboy, un film de genre</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="frise_fr.html">Frise du féminisme</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="galerie_fr.html">Galerie des figures du féminisme</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="glossaire_fr.html">Glossaire</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="a-propos-contact_fr.html">À propos & contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="autres-projets_fr.html">Autres Projets</a>
+                    </li>
+                </ul>
+                <div class="menu__langue">
+                    <a href="index.html"><img class="menu__drap" src="public/icone/fr.svg"
+                            alt="icone drapeau français"></a>
+                    <a href="index_en.html"><img class="menu__drap" src="public/icone/en.svg"
+                            alt="icone drapeau anglais"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h1 class="h1__404">[FR] Page Non trouvée</h1>
+        <h1 class="h1__404">[EN] Page Not Found</h1>
+        <form action="https://duckduckgo.com/" method="GET" x-data="{ q:'', }"
+            x-on:submit="q = q + ' site:mmimontbeliard.com'">
+            <label for="q">Text à chercher :</label>
+            <input type="text" id="q" name="q" x-model="q">
+            <button type="submit">Rechercher</button>
+        </form>
+    </main>
+
+    <div class="btn">
+        <a href="#"><img src="Public/icone/chevrons-up.svg"
+                alt="icone chevrons up qui permet de remonter en haut de la page"></a>
+    </div>
+    <footer class="footer">
+        <p class="footer__nom">Victoria STEIB--AUDY MMI 1 C2</p><br>
+        <div class="footer__mid">
+            <address class="footer__address gauche"><a
+                    href="mailto:steib.victoria@gmail.com">steib.victoria@gmail.com</a>
+            </address>
+            <a class="footer__logo droite" href="http://mmimontbeliard.com"><img src="public/img/logo_mmi_noir.svg"
+                    alt="Logo du département MMI de Montbéliard"></a>
+        </div>
+        <p class="footer__ML">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard
+        </p>
+
+    </footer>
+</body>
