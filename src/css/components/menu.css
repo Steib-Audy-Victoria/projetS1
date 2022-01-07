@@ -91,6 +91,5 @@
 .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
 .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
 .header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
-  background-color: var(--rose-fonce-fond);
   color: var(--corps-de-texte-noir);
 }
