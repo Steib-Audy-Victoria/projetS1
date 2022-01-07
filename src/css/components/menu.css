@@ -30,7 +30,7 @@
 }
 
 .menu__item {
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 .menu__link {
@@ -40,7 +40,7 @@
 
 .menu__langue {
     position: relative;
-    top: 650px;
+    top: 630px;
     right: 20px;
 }
 
