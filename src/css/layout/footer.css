@@ -1,3 +1,10 @@
+.footer {
+    background-color: var(--rose-fonce-fond);
+    color: var(--noir-rose-texte-2);
+    padding: var(--space3x) var(--space2x);
+    z-index: -5;
+}
+
 .footer__mid {
     display: flex; 
     flex-flow: row nowrap; 
@@ -6,12 +13,6 @@
 
 .footer__mid>.gauche {
     flex: none;
-}
-
-.footer {
-    background-color: var(--rose-fonce-fond);
-    color: var(--noir-rose-texte-2);
-    padding: var(--space3x) var(--space2x);
 }
 
 .footer__nom {
