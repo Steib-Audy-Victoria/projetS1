@@ -15,6 +15,7 @@
     transition: all 1s ease;
     transform: translateX(100%);
     z-index: 2;
+    max-height: 812px;
 }
 
 .menu--open {
@@ -39,7 +40,7 @@
 
 .menu__langue {
     position: relative;
-    top: 770px;
+    top: 700px;
     right: 20px;
 }
 
