@@ -17,6 +17,9 @@
 }
 
 .card__link {
+    text-decoration: none;
+    color: var(--rose-violet-texte);
+    
     display: flex;
     align-items: center;
     justify-content: center;
