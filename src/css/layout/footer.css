@@ -37,3 +37,8 @@
     margin-top: 0px;
     padding-top: 0px;
 }
+
+.footer__link {
+    text-decoration: none;
+    color: var(--noir-rose-texte-2);
+}
