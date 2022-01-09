@@ -18,6 +18,12 @@ p, h2, h3, h4 {
   padding: var(--space1x);
 }
 
+legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Les règles typographiques générales des titres */
 h1, h2 {
     font-weight: normal;
