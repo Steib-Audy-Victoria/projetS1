@@ -14,7 +14,7 @@ fieldset {
 fieldset>legend {
     font-size: var(--titre-article-page);
     color: var(--rose-violet-texte);
-    margin-left: 39px;
+    padding-right: 250px;
 }
 
 label, input {

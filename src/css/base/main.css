@@ -22,6 +22,7 @@ legend {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* Les règles typographiques générales des titres */
