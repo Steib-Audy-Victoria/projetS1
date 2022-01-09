@@ -1,7 +1,17 @@
 /*chevrons up*/
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*lien vers le glossaire*/
+
+.btn_link {
+  text-decoration: none;
+  color: var(--corps-de-texte-noir);
+  border: solid var(--rose-violet-texte) 2px;
+  padding: 2px;
+  margin-left: 280px;
+}
